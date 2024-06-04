@@ -214,10 +214,11 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--first-color);
+  /* fill: hsl(0deg 0% 100%); */
+  fill: hsl(0deg 70.95% 36.15%);
 }
 .home__blob-img {
-  width: 360px;
+  width: 500px;
 }
 
 /*BUTTONS*/
