@@ -209,7 +209,7 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
+  right: -100px;
   bottom: 0;
   width: 260px;
 }
