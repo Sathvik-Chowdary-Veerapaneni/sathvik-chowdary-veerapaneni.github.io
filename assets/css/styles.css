@@ -235,19 +235,36 @@ img {
 }
 
 /* ===== ABOUT =====*/
+
 .about__container {
-  row-gap: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns container content to the start */
+  text-align: left; /* Ensures text alignment is to the left */
+  width: 100%;
+  padding-left: 15%; /* Adjust this percentage to align with 'I'm' in your layout */
 }
-.about__subtitle {
-  margin-bottom: var(--mb-2);
+
+.about__list {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  width: 100%;
 }
-.about__img {
-  justify-self: center;
+
+.about__list li {
+  display: flex;
+  align-items: center; /* Centers the items vertically */
+  margin-bottom: 10px; /* Space between list items */
 }
-.about__img img {
-  width: 200px;
-  border-radius: 0.5rem;
+
+.about__list i {
+  width: 40px; /* Fixed width for icons */
+  text-align: center; /* Centers the icon within its column */
+  margin-right: 10px; /* Space between the icon and the text */
+}
+
+.about__list span {
+  display: inline-block; /* Allows text to align next to the icon */
 }
 
 /* ===== SKILLS =====*/
