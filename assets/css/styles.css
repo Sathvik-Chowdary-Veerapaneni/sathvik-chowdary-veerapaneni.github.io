@@ -155,6 +155,7 @@ img {
 }
 .nav__logo {
   color: var(--second-color);
+  margin-left: -10rem;
 }
 .nav__toggle {
   color: var(--second-color);
@@ -178,48 +179,63 @@ img {
   right: 0;
 }
 
-/*===== HOME =====*/
+/*===== HOME SECTION STYLING =====*/
 .home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
+  display: flex;
+  justify-content: space-around; /* Adjust the spacing around items */
+
+  padding: 4rem 0; /* Top and bottom padding */
+  min-height: 100vh; /* Optional: Ensures the section takes full viewport height */
 }
+
 .home__data {
-  align-self: center;
+  width: auto; /* Allocates width to the text block */
+  padding-right: 1%; /* Adds padding to avoid touching the blob */
 }
+
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  margin-bottom: 20rem;
+  margin-left:-5rem;
+  /* margin: top 1px; */
+  text-align: left; /* Ensures text alignment is left */
 }
+
 .home__title-color {
   color: var(--first-color);
 }
+
 .home__social {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 4rem; Adjust the margin as needed */
 }
+
 .home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  margin-right: 1rem; /* Adds right margin to each icon for spacing */
+  font-size: 2.5rem;
   color: var(--second-color);
+  margin: 0 1rem;
 }
+
 .home__social-icon:hover {
   color: var(--first-color);
 }
+
 .home__img {
-  position: absolute;
-  right: -200px;
-  bottom: 0;
-  width: 260px;
+  width: 70%; /* Adjusts the width of the image container */
+  position: relative; /* Position relative to its normal position */
+  right: 0; /* Adjust right position if needed */
+  transform: translateX(20%); /* Moves the image right to reduce space */
 }
-.home__blob {
-  /* fill: hsl(0deg 0% 100%); */
-  fill: hsl(0deg 70.95% 36.15%);
-}
+
 .home__blob-img {
-  width: 500px;
+  width: 100%; /* Ensures the image fills the container */
+  height: auto; /* Maintains aspect ratio */
 }
+
+
 
 /*BUTTONS*/
 .button {
@@ -240,11 +256,13 @@ img {
 .about__container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligns container content to the start */
-  text-align: left; /* Ensures text alignment is to the left */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  padding-left: 15%; /* Adjust this percentage to align with 'I'm' in your layout */
+  padding-left: 0;
 }
+
 
 .about__list {
   list-style: none; /* Removes bullet points */
@@ -439,15 +457,15 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .section-title {
     margin-bottom: var(--mb-6);
   }
   .section-title::after {
-    width: 80px;
-    top: 3rem;
+    width: 10px;
+    top: 1rem;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -525,8 +543,12 @@ img {
   transform: scale(1.1);
 }
 
+.project__card {
+  text-align: center;
+}
+
 .project-title {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   color: #333;
   text-align: center;
   margin-top: 1rem;
